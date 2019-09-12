@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(MaterialApp(title: '页面跳转返回数据', home: FirstPage()));
@@ -48,8 +49,36 @@ class FirstPage extends StatelessWidget {
               ),
             ),
             Container(
+              padding: EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0),
               height: 55.0,
               color: Colors.black,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      new Image(
+                        image: new NetworkImage('https://p1.meituan.net/travelcube/7264ce9c25de2e464e3acd996fe8ad362803.png'), 
+                              width: 40.0,  
+                              height: 40.0,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Text('省钱利器 购物更划算',  style: new TextStyle(color: Colors.white), textDirection: TextDirection.ltr,),
+                          Text('吃喝玩乐尽在美团', style: new TextStyle(color: Colors.white), textDirection: TextDirection.ltr,)
+                        ],
+                      ),
+                      Container(
+                        child: new RaisedButton(
+                          child: Text('去App'),
+                          onPressed: () {},
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
             )
           ],
         )
