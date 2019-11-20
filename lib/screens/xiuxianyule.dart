@@ -108,19 +108,19 @@ class Xiuxianyule extends StatelessWidget {
               children: <Widget>[
                 new ListView.builder(
                     shrinkWrap: true,
-                    itemCount: 1,
+                    itemCount: 2,
                     itemBuilder: (BuildContext context, int index) {
                       return new Container(
-                          padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                          color: Color(0xfff0efed),
                           child: Column(
                             children: <Widget>[
                               Column(
                                 children: <Widget>[
                                   Container(
-                                    padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                                    color: Color(0xffffffff),
+                                    padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
                                     child: Row(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: <Widget>[
                                         Text('墨韵·日式SPA',
                                             style: new TextStyle(
@@ -128,8 +128,7 @@ class Xiuxianyule extends StatelessWidget {
                                                 fontSize: 15.0)),
                                         Container(
                                           alignment: Alignment.center,
-                                          margin:
-                                              EdgeInsets.fromLTRB(5, 3, 0, 15),
+                                          margin: EdgeInsets.fromLTRB(8, 3, 0, 5),
                                           width: 18.0,
                                           height: 20.0,
                                           decoration: BoxDecoration(
@@ -146,24 +145,25 @@ class Xiuxianyule extends StatelessWidget {
                                     ),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                                    padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                                    decoration: BoxDecoration(
+                                      color: Color(0xffffffff),
+                                      border: Border(bottom: BorderSide(width: 1, color: Color(0xffDDD8CE)))
+                                    ),
                                     child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: <Widget>[
                                         Row(
                                           children: <Widget>[
                                             Text('4.5',
-                                                style: new TextStyle(
-                                                    color: Color(0xffFF9900)))
+                                                style: new TextStyle(color: Color(0xffFF9900)))
                                           ],
                                         ),
                                         Row(
                                           children: <Widget>[
                                             Text('3.4km'),
                                             Padding(
-                                              padding:
-                                                  EdgeInsets.only(left: 10.0),
+                                              padding: EdgeInsets.only(left: 10.0),
                                               child: Text('龙柏地区'),
                                             )
                                           ],
@@ -171,24 +171,26 @@ class Xiuxianyule extends StatelessWidget {
                                       ],
                                     ),
                                   ),
-                                  Divider(
-                                    height: 10,
-                                    color: Color(0xffDDD8CE),
-                                    indent: 0.0,
-                                  )
                                 ],
                               ),
                               Column(
                                 children: <Widget>[
-                                  new ListView.builder(
+                                  Container(
+                                    padding: EdgeInsets.only(top: 10),
+                                    color: Color(0xffffffff),
+                                    child: new ListView.builder(
                                       shrinkWrap: true,
-                                      itemCount: 1,
-                                      itemBuilder:
-                                          (BuildContext context, int index) {
+                                      itemCount: 2,
+                                      itemBuilder: (BuildContext context, int index) {
                                         return Container(
-                                          padding: EdgeInsets.all(10),
+                                          padding: EdgeInsets.only(bottom: 10),
+                                          margin: EdgeInsets.fromLTRB(10, 0, 10, 5),
+                                          decoration: BoxDecoration(
+                                            border: Border(bottom: BorderSide(width: 1, color: Color(0xffDDD8CE)))
+                                          ),
                                           child: Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: <Widget>[
                                               new Expanded(
                                                 flex: 1,
@@ -206,14 +208,12 @@ class Xiuxianyule extends StatelessWidget {
                                               new Expanded(
                                                   flex: 3,
                                                   child: Column(
-                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                    crossAxisAlignment:CrossAxisAlignment.start,
                                                     children: <Widget>[
                                                       Column(
-                                                        crossAxisAlignment:CrossAxisAlignment.start,
                                                         children: <Widget>[
                                                           new Container(
-                                                            child: Text('静享时光·舒享采耳', style: new TextStyle(fontSize: 17.0)),
+                                                            alignment: Alignment.topLeft,
+                                                            child: Text('静享时光·舒享采耳1', style: new TextStyle(fontSize: 17.0)),
                                                             margin: EdgeInsets.only(bottom:2.0),
                                                           )
                                                         ],
@@ -234,8 +234,8 @@ class Xiuxianyule extends StatelessWidget {
                                                                             text: '元',
                                                                             style: new TextStyle(color: Color(0xffff6c20))),
                                                                         TextSpan(
-                                                                            text: '门市价:79元',
-                                                                            style:new TextStyle(color: Colors.grey))
+                                                                            text: ' 门市价:79元',
+                                                                            style:new TextStyle(color: Color(0xff666666)))
                                                                       ]),
                                                                 ),
                                                               ),
@@ -243,7 +243,7 @@ class Xiuxianyule extends StatelessWidget {
                                                                 direction: Axis.horizontal,
                                                                 children: <
                                                                     Widget>[
-                                                                    Text('已售177676',style: new TextStyle(fontSize:13.0)),
+                                                                    Text('已售177676',style: new TextStyle(fontSize:13.0, color: Color(0xff666666))),
                                                                 ],
                                                               )
                                                             ],
@@ -252,10 +252,24 @@ class Xiuxianyule extends StatelessWidget {
                                                       )
                                                     ],
                                                   )),
+                                                  Divider(
+                                                    indent: 0,
+                                                    height: 1,
+                                                    color: Color(0xffcccccc),
+                                                  )
                                             ],
                                           ),
                                         );
-                                      })
+                                      }),
+                                  ),
+                                  Container(
+                                    alignment: Alignment.center,
+                                    margin: EdgeInsets.only(bottom: 10),
+                                    width: MediaQuery.of(context).size.width,
+                                    height: 35,
+                                    color: Color(0xffffffff),
+                                    child: Text('查看其他7条团购', style: new TextStyle(color: Color(0xffFE8C00)),),
+                                  )
                                 ],
                               )
                             ],
