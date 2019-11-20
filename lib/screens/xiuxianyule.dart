@@ -274,7 +274,34 @@ class Xiuxianyule extends StatelessWidget {
                               )
                             ],
                           ));
-                    })
+                    }),
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Container(
+                    margin: EdgeInsets.fromLTRB(10, 0, 15, 0),
+                    child: MaterialButton(
+                    color: Color(0xffdcdcdc),
+                    textColor: Color(0xff999999),
+                    child: new Text('第一页'),
+                    onPressed: () {
+
+                    },
+                  ),
+                ),
+                new Text('1'),
+                Container(
+                  margin: EdgeInsets.fromLTRB(15, 0, 10, 0),
+                  child: MaterialButton(
+                    color: Color.fromRGBO(255, 150, 0, 1),
+                    textColor: Color(0xffffffff),
+                    child: new Text('下一页'),
+                    onPressed: () {
+
+                    },
+                  ),
+                )
               ],
             )
           ],

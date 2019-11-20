@@ -3,6 +3,7 @@ import 'package:my_flutter_demo/screens/home.dart';
 import 'package:my_flutter_demo/screens/maoyan.dart';
 import 'package:my_flutter_demo/screens/hotel.dart';
 import 'package:my_flutter_demo/screens/xiuxianyule.dart';
+import 'package:my_flutter_demo/screens/waimai.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
@@ -14,6 +15,8 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => Hotel());
     case 'xiuxianyule':
       return MaterialPageRoute(builder: (context) => Xiuxianyule());
+    case 'waimai':
+      return MaterialPageRoute(builder: (context) => WaiMai());
     default:
       return MaterialPageRoute(builder: (context) => Home());
   }
