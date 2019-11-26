@@ -106,198 +106,7 @@ class Home extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Column(
-                      children: <Widget>[
-                        Column(
-                          children: <Widget>[
-                            new Container(
-                              width: 50.0,
-                              height: 50.0,
-                              margin: EdgeInsets.only(bottom: 8.0),
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                  image: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
-                                )
-                              ),
-                            ),
-                            new Text('美食'),
-                            new Container(
-                              width: 50.0,
-                              height: 50.0,
-                              margin: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 8.0),
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                  image: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
-                                )
-                              ),
-                            ),
-                            new Text('KTV')
-                          ],
-                        )
-                      ],
-                  ),
-                  Column(
-                      children: <Widget>[
-                        Column(
-                          children: <Widget>[
-                            new RaisedButton(
-                              padding: EdgeInsets.all(0.0),
-                              child: new Container(
-                                width: 50.0,
-                                height: 50.0,
-                                margin: EdgeInsets.only(bottom: 8.0),
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
-                                    image: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
-                                  )
-                                ),
-                              ),
-                              onPressed: () {
-                                Navigator.pushNamed(context, 'maoyan', arguments: '');
-                              },
-                            ),
-                            new Text('猫眼电影'),
-                            new Container(
-                              width: 50.0,
-                              height: 50.0,
-                              margin: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 8.0),
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                  image: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
-                                )
-                              ),
-                            ),
-                            new Text('周边游')
-                          ],
-                        )
-                      ],
-                  ),
-                  Column(
-                      children: <Widget>[
-                        Column(
-                          children: <Widget>[
-                            new RaisedButton(
-                              padding: EdgeInsets.all(0.0),
-                              child: new Container(
-                                width: 50.0,
-                                height: 50.0,
-                                margin: EdgeInsets.only(bottom: 8.0),
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
-                                    image: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
-                                  )
-                                ),
-                              ),
-                              onPressed: () {
-                                Navigator.pushNamed(context, 'hotel', arguments: '');
-                              },
-                            ),
-                            new Text('酒店'),
-                            new Container(
-                              width: 50.0,
-                              height: 50.0,
-                              margin: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 8.0),
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                  image: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
-                                )
-                              ),
-                            ),
-                            new Text('丽人')
-                          ],
-                        )
-                      ],
-                  ),
-                  Column(
-                      children: <Widget>[
-                        Column(
-                          children: <Widget>[
-                            new RaisedButton(
-                              padding: EdgeInsets.all(0.0),
-                              child: new Container(
-                                width: 50.0,
-                                height: 50.0,
-                                margin: EdgeInsets.only(bottom: 8.0),
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
-                                    image: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
-                                  )
-                                ),
-                              ),
-                              onPressed: () {
-                                Navigator.pushNamed(context, 'xiuxianyule', arguments: '');
-                              },
-                            ),
-                            new Text('休闲娱乐'),
-                            new Container(
-                              width: 50.0,
-                              height: 50.0,
-                              margin: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 8.0),
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                  image: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
-                                )
-                              ),
-                            ),
-                            new Text('小吃快餐')
-                          ],
-                        )
-                      ],
-                  ),
-                  Column(
-                      children: <Widget>[
-                        Column(
-                          children: <Widget>[
-                            new RaisedButton(
-                              padding: EdgeInsets.all(0),
-                              child: new Container(
-                                width: 50.0,
-                                height: 50.0,
-                                margin: EdgeInsets.only(bottom: 8.0),
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                    image: DecorationImage(
-                                      image: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
-                                    )
-                                  ),
-                                ),
-                              onPressed: () {
-                                Navigator.pushNamed(context, 'waimai', arguments: '');
-                              },
-                            ),
-                            new Text('外卖'),
-                            new Container(
-                              width: 50.0,
-                              height: 50.0,
-                              margin: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 8.0),
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                  image: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
-                                )
-                              ),
-                            ),
-                            new Text('全部分类')
-                          ],
-                        )
-                      ],
-                  ),
-                  ],
-                ) 
-              ),
+              Menu(),
               Container(
                 alignment: Alignment.centerLeft,
                 child: Column(
@@ -633,6 +442,381 @@ class Home extends StatelessWidget {
             ],
           )
         )
+    );
+  }
+}
+
+// 
+class Menu extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.fromLTRB(10, 20, 10, 0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+            Column(
+              children: <Widget>[
+                Column(
+                  children: <Widget>[
+                    new Container(
+                        width: 60.0,
+                        height: 80.0,
+                        margin: EdgeInsets.only(bottom: 8.0),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                        child: new RaisedButton(
+                          padding: EdgeInsets.all(0.0),
+                          color: Color(0xffffffff),
+                          highlightColor: Color(0xffffffff),
+                          elevation: 0,
+                          highlightElevation: 0,
+                          disabledElevation: 0,
+                          // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
+                          child: Column(
+                            children: <Widget>[
+                              new CircleAvatar(
+                                backgroundImage: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
+                                radius: 25.0,
+                              ),
+                              Padding(
+                                child:  Text('美食'),
+                                padding: EdgeInsets.only(top: 10),
+                              )
+                            ],
+                          ),
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'maoyan', arguments: '');
+                          },
+                        ),
+                    ),
+                    new Container(
+                        width: 60.0,
+                        height: 80.0,
+                        margin: EdgeInsets.only(bottom: 8.0),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                        child: new RaisedButton(
+                          padding: EdgeInsets.all(0.0),
+                          color: Color(0xffffffff),
+                          highlightColor: Color(0xffffffff),
+                          elevation: 0,
+                          highlightElevation: 0,
+                          disabledElevation: 0,
+                          // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
+                          child: Column(
+                            children: <Widget>[
+                              new CircleAvatar(
+                                backgroundImage: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
+                                radius: 25.0,
+                              ),
+                              Padding(
+                                child:  Text('KTV'),
+                                padding: EdgeInsets.only(top: 10),
+                              )
+                            ],
+                          ),
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'maoyan', arguments: '');
+                          },
+                        ),
+                    ),
+                  ],
+                )
+              ],
+          ),
+          Column(
+              children: <Widget>[
+                Column(
+                  children: <Widget>[
+                    new Container(
+                        width: 60.0,
+                        height: 80.0,
+                        margin: EdgeInsets.only(bottom: 8.0),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                        child: new RaisedButton(
+                          padding: EdgeInsets.all(0.0),
+                          color: Color(0xffffffff),
+                          highlightColor: Color(0xffffffff),
+                          elevation: 0,
+                          highlightElevation: 0,
+                          disabledElevation: 0,
+                          // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
+                          child: Column(
+                            children: <Widget>[
+                              new CircleAvatar(
+                                backgroundImage: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
+                                radius: 25.0,
+                              ),
+                              Padding(
+                                child:  Text('猫眼电影'),
+                                padding: EdgeInsets.only(top: 10),
+                              )
+                            ],
+                          ),
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'maoyan', arguments: '');
+                          },
+                        ),
+                    ),
+                    new Container(
+                        width: 60.0,
+                        height: 80.0,
+                        margin: EdgeInsets.only(bottom: 8.0),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                        child: new RaisedButton(
+                          padding: EdgeInsets.all(0.0),
+                          color: Color(0xffffffff),
+                          highlightColor: Color(0xffffffff),
+                          elevation: 0,
+                          highlightElevation: 0,
+                          disabledElevation: 0,
+                          // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
+                          child: Column(
+                            children: <Widget>[
+                              new CircleAvatar(
+                                backgroundImage: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
+                                radius: 25.0,
+                              ),
+                              Padding(
+                                child:  Text('周边游'),
+                                padding: EdgeInsets.only(top: 10),
+                              )
+                            ],
+                          ),
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'maoyan', arguments: '');
+                          },
+                        ),
+                    ),
+                  ],
+                )
+              ],
+          ),
+          Column(
+              children: <Widget>[
+                Column(
+                  children: <Widget>[
+                    new Container(
+                        width: 60.0,
+                        height: 80.0,
+                        margin: EdgeInsets.only(bottom: 8.0),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                        child: new RaisedButton(
+                          padding: EdgeInsets.all(0.0),
+                          color: Color(0xffffffff),
+                          highlightColor: Color(0xffffffff),
+                          elevation: 0,
+                          highlightElevation: 0,
+                          disabledElevation: 0,
+                          // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
+                          child: Column(
+                            children: <Widget>[
+                              new CircleAvatar(
+                                backgroundImage: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
+                                radius: 25.0,
+                              ),
+                              Padding(
+                                child:  Text('酒店'),
+                                padding: EdgeInsets.only(top: 10),
+                              )
+                            ],
+                          ),
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'hotel', arguments: '');
+                          },
+                        ),
+                    ),
+                    new Container(
+                        width: 60.0,
+                        height: 80.0,
+                        margin: EdgeInsets.only(bottom: 8.0),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                        child: new RaisedButton(
+                          padding: EdgeInsets.all(0.0),
+                          color: Color(0xffffffff),
+                          highlightColor: Color(0xffffffff),
+                          elevation: 0,
+                          highlightElevation: 0,
+                          disabledElevation: 0,
+                          // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
+                          child: Column(
+                            children: <Widget>[
+                              new CircleAvatar(
+                                backgroundImage: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
+                                radius: 25.0,
+                              ),
+                              Padding(
+                                child:  Text('丽人'),
+                                padding: EdgeInsets.only(top: 10),
+                              )
+                            ],
+                          ),
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'hotel', arguments: '');
+                          },
+                        ),
+                    ),
+                  ],
+                )
+              ],
+          ),
+          Column(
+              children: <Widget>[
+                Column(
+                  children: <Widget>[
+                    new Container(
+                        width: 60.0,
+                        height: 80.0,
+                        margin: EdgeInsets.only(bottom: 8.0),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                        child: new RaisedButton(
+                          padding: EdgeInsets.all(0.0),
+                          color: Color(0xffffffff),
+                          highlightColor: Color(0xffffffff),
+                          elevation: 0,
+                          highlightElevation: 0,
+                          disabledElevation: 0,
+                          // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
+                          child: Column(
+                            children: <Widget>[
+                              new CircleAvatar(
+                                backgroundImage: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
+                                radius: 25.0,
+                              ),
+                              Padding(
+                                child:  Text('休闲娱乐'),
+                                padding: EdgeInsets.only(top: 10),
+                              )
+                            ],
+                          ),
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'xiuxianyule', arguments: '');
+                          },
+                        ),
+                    ),
+                    new Container(
+                        width: 60.0,
+                        height: 80.0,
+                        margin: EdgeInsets.only(bottom: 8.0),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                        child: new RaisedButton(
+                          padding: EdgeInsets.all(0.0),
+                          color: Color(0xffffffff),
+                          highlightColor: Color(0xffffffff),
+                          elevation: 0,
+                          highlightElevation: 0,
+                          disabledElevation: 0,
+                          // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
+                          child: Column(
+                            children: <Widget>[
+                              new CircleAvatar(
+                                backgroundImage: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
+                                radius: 25.0,
+                              ),
+                              Padding(
+                                child:  Text('小吃快餐'),
+                                padding: EdgeInsets.only(top: 10),
+                              )
+                            ],
+                          ),
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'xiuxianyule', arguments: '');
+                          },
+                        ),
+                    ),
+                  ],
+                )
+              ],
+          ),
+          Column(
+              children: <Widget>[
+                Column(
+                  children: <Widget>[
+                    new Container(
+                        width: 60.0,
+                        height: 80.0,
+                        margin: EdgeInsets.only(bottom: 8.0),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                        child: new RaisedButton(
+                          padding: EdgeInsets.all(0.0),
+                          color: Color(0xffffffff),
+                          highlightColor: Color(0xffffffff),
+                          elevation: 0,
+                          highlightElevation: 0,
+                          disabledElevation: 0,
+                          // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
+                          child: Column(
+                            children: <Widget>[
+                              new CircleAvatar(
+                                backgroundImage: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
+                                radius: 25.0,
+                              ),
+                              Padding(
+                                child:  Text('外卖'),
+                                padding: EdgeInsets.only(top: 10),
+                              )
+                            ],
+                          ),
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'waimai', arguments: '');
+                          },
+                        ),
+                    ),
+                    new Container(
+                        width: 60.0,
+                        height: 80.0,
+                        margin: EdgeInsets.only(bottom: 8.0),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                        child: new RaisedButton(
+                          padding: EdgeInsets.all(0.0),
+                          color: Color(0xffffffff),
+                          highlightColor: Color(0xffffffff),
+                          elevation: 0,
+                          highlightElevation: 0,
+                          disabledElevation: 0,
+                          // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
+                          child: Column(
+                            children: <Widget>[
+                              new CircleAvatar(
+                                backgroundImage: new NetworkImage('http://p0.meituan.net/200.0/deal/45c6c4a2449173d0c88eaff69a83f42c7320745.jpg@950_0_3819_3819a%7C267h_267w_2e_90Q'),
+                                radius: 25.0,
+                              ),
+                              Padding(
+                                child:  Text('全部分类'),
+                                padding: EdgeInsets.only(top: 10),
+                              )
+                            ],
+                          ),
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'waimai', arguments: '');
+                          },
+                        ),
+                    ),
+                  ],
+                )
+              ],
+          ),
+        ],
+      ) 
     );
   }
 }
